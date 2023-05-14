@@ -1,0 +1,365 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Merienda', cursive;
+    color: #87638f;
+}
+
+.logInContainer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(180deg, #120152 14%, #00021F 25%, #00021F 75%, #120152 85%, #440167 95%);
+}
+
+.logInContainer .logIn_footer {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    bottom: 0;
+    width: 100vw;
+    height: 4vh;
+    background-color: #440167;
+    color: #87638f;
+}
+
+ .logIn_footer .container {
+     padding: 5px;
+ }
+
+.logInContainer .logIn_topNavBar {
+    position: absolute;
+    display: flex;
+    top: 0;
+    width: 100vw;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #660175 0%, #440167 100%);
+    color: #87638f;
+    font-family: 'Merienda', cursive;
+    font-size: 40px;
+}
+
+.logInContainer .logIn_sideNavBar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 7vh;
+    width: 100vw;
+    height: 7vh;
+    justify-content: center;
+    background: linear-gradient(180deg, #440167 0%, #120152 100%);
+    color: #860073;
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+}
+
+.logIn_sideNavBar_List {
+    position: absolute;
+    display: flex;
+    top: 20%;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.logIn_sideNavBar_List .logIn_navItem {
+    cursor: pointer;
+    border: 1px solid #860073;
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    color: #860073;
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+    border-radius: 10px;
+}
+
+
+
+
+
+.logInContainer .logIn_form {
+    position: absolute;
+    display: flex;
+    width: 30vw;
+    height: 30vh;
+    background-color: #120152;
+    top: 35vh;
+    left: 35vw;
+    border: solid 1px #860073;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.logInContainer .logIn_form .logIn_formContents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color: #860073;
+    font-family: 'Merienda', cursive;
+    font-size: 14px;
+}
+
+.logIn_form .logIn_formContents #logIn_username {
+    height: 10%;
+    width: 55%;
+    padding-right: 10px;
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+}
+
+.logIn_form .logIn_formContents #logIn_password {
+    height: 10%;
+    width: 55%;
+    padding-left: 10px;
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+}
+
+.logIn_form .logIn_formContents #logIn_submit {
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+    color: #860073;
+    font-family: 'Merienda', cursive;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+
+
+
+.logInContainer .registration_form {
+    position: absolute;
+    display: none;
+    width: 30vw;
+    height: 70vh;
+    background-color: #120152;
+    top: 17vh;
+    left: 35vw;
+    border: solid 1px #860073;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.logInContainer .registration_form .registration_formContents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color: #860073;
+    font-family: 'Merienda', cursive;
+    font-size: 14px;
+}
+
+.registration_form .registration_formContents #registration_username {
+    height: 5%;
+    width: 55%;
+    padding-right: 10px;
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+}
+
+.registration_form .registration_formContents #registration_firstName {
+    height: 5%;
+    width: 55%;
+    padding-left: 10px;
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+}
+
+.registration_form .registration_formContents #registration_lastName {
+    height: 5%;
+    width: 55%;
+    padding-left: 10px;
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+}
+
+.registration_form .registration_formContents #registration_password {
+    height: 5%;
+    width: 55%;
+    padding-left: 10px;
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+}
+
+.registration_form .registration_formContents #registration_passwordCheck {
+    height: 5%;
+    width: 55%;
+    padding-left: 10px;
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+}
+
+.registration_form .registration_formContents #registration_email {
+    height: 5%;
+    width: 55%;
+    padding-left: 10px;
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+}
+
+.registration_form .registration_formContents #registration_securityQuestion {
+    height: 6%;
+    width: 57.5%;
+    padding-left: 10px;
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+}
+
+.registration_form .registration_formContents #registration_securityQuestionAnswer {
+    height: 5%;
+    width: 55%;
+    padding-left: 10px;
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+}
+
+.registration_form .registration_formContents #registration_submit {
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+    color: #860073;
+    font-family: 'Merienda', cursive;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+
+
+
+.logInContainer .passwordReset_form {
+    position: absolute;
+    display: none;
+    width: 30vw;
+    height: 50vh;
+    background-color: #120152;
+    top: 25vh;
+    left: 35vw;
+    border: solid 1px #860073;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.logInContainer .passwordReset_form .passwordReset_formContents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color: #860073;
+    font-family: 'Merienda', cursive;
+    font-size: 14px;
+}
+
+.passwordReset_form .passwordReset_formContents #passwordReset_username {
+    height: 7%;
+    width: 55%;
+    padding-right: 10px;
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+}
+
+.passwordReset_form .passwordReset_formContents #passwordReset_securityQuestion {
+    height: 8%;
+    width: 57.5%;
+    padding-left: 10px;
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+}
+
+.passwordReset_form .passwordReset_formContents #passwordReset_securityQuestionAnswer {
+    height: 7%;
+    width: 55%;
+    padding-left: 10px;
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+}
+
+.passwordReset_form .passwordReset_formContents #passwordReset_newPassword {
+    height: 7%;
+    width: 55%;
+    padding-left: 10px;
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+}
+
+.passwordReset_form .passwordReset_formContents #passwordReset_confirmNewPassword {
+    height: 7%;
+    width: 55%;
+    padding-left: 10px;
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+}
+
+.passwordReset_form .passwordReset_formContents #passwordReset_submit {
+    border: solid 1px #860073;
+    border-radius: 10px;
+    background-color: #00021F;
+    color: #860073;
+    font-family: 'Merienda', cursive;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+
+
+.logInContainer #logIn_success {
+    display: none;
+    height: 82vh;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #860073;
+    font-family: 'Merienda', cursive;
+    font-size: 40px;
+    top: 10vh;
+    left: 0vw;
+}
+
+
+
+
+
+select {
+    color: #860073;
+    font-family: 'Merienda', cursive;
+}
+
+input {
+    color: #860073;
+    font-family: 'Merienda', cursive;
+}

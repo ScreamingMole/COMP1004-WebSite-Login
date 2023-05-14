@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/LogIn.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <title>SPA for Log In, Cluster L</title>
+</head>
+<body>
+    <div class="logInContainer">
+
+        <!--Top NavBar-->
+        <div class="logIn_topNavBar">
+            <div class="logIn_topNavBar_header">
+                <span>BonsaiBee</span>
+            </div>
+        </div>
+
+
+        <!--Side NavBar-->
+        <div class="logIn_sideNavBar">
+            <div class="logIn_sideNavBar_List">
+                <button class="logIn_navItem" id="toLogIn">Login</button>
+                <button class="logIn_navItem" id="toRegistration">Registration</button>
+                <button class="logIn_navItem" id="toPasswordReset">Password Reset</button>
+            </div>
+        </div>
+
+
+        <!--Login Form-->
+        <div class="logIn_form">
+            <div class="logIn_formContents">
+                <h1>Login</h1>
+
+                <label for="username">Username</label>
+                <input type="text" id="logIn_username" name="username">
+
+                <label for="password">Password</label>
+                <input type="password" id="logIn_password" name="password">
+
+                <input type="submit" id="logIn_submit" value="Submit">
+            </div>
+        </div>
+
+        <!--Registration Form-->
+        <div class="registration_form">
+            <div class="registration_formContents">
+                <h1>Registraton</h1>
+
+                <label for="registration_firstName">First Name</label>
+                <input type="text" id="registration_firstName" name="firstName">
+
+                <label for="registration_lastName">Last Name</label>
+                <input type="text" id="registration_lastName" name="lastName">
+
+                <label for="registration_email">Email</label>
+                <input type="email" id="registration_email" name="email" required>
+
+                <label for="registration_username">Username</label>
+                <input type="text" id="registration_username" name="username">
+
+                <label for="registration_password">Password</label>
+                <input type="password" id="registration_password" name="password">
+
+                <label for="registration_passwordCheck">Confirm Password</label>
+                <input type="password" id="registration_passwordCheck" name="passwordCheck">
+
+                <label for="registraton_securityQuestion">Security Question</label>
+                <select id="registration_securityQuestion">
+                    <option value="firstSchool">What was your first School?</option>
+                    <option value="firstPet">What was your first pet?</option>
+                    <option value="favouriteFilm">What is your favourite film?</option>
+                </select>
+
+                <label for="registration_securityQuestionAnswer">Security Question Answer</label>
+                <input type="text" id="registration_securityQuestionAnswer" name="securityQuestionAnswer">
+
+                <input type="submit" id="registration_submit" value="Submit">
+            </div>
+        </div>
+
+        <!--Password Reset Form-->
+        <div class="passwordReset_form">
+            <div class="passwordReset_formContents">
+                <h1>Password Reset</h1>
+
+                <label for="passwordReset_username">Username</label>
+                <input type="text" id="passwordReset_username" name="username">
+
+                <label for="passwordReset_securityQuestion">Security Question</label>
+                <select id="passwordReset_securityQuestion">
+                    <option value="firstSchool">What was your first School?</option>
+                    <option value="firstPet">What was your first pet?</option>
+                    <option value="favouriteFilm">What is your favourite film?</option>
+                </select>
+
+                <label for="passwordReset_securityQuestionAnswer">Security Question Answer</label>
+                <input type="text" id="passwordReset_securityQuestionAnswer" name="securityQuestionAnswer">
+
+                <label for="passwordReset_newPassword">New Password</label>
+                <input type="password" id="passwordReset_newPassword" name="newPassword">
+
+                <label for="passwordReset_confirmNewPassword">Confirm New Password</label>
+                <input type="password" id="passwordReset_confirmNewPassword" name="confirmNewPassword">
+
+                <input type="submit" id="passwordReset_submit" value="Submit">
+            </div>
+        </div>
+
+        <!--Login Success Page-->
+        <div class="logIn_success" id="logIn_success">
+            <span>
+                You Have Been Loged In
+            </span>
+        </div>
+
+        <!--Footer-->
+        <footer class="logIn_footer">
+            <div class="container">
+                <span>
+                    Tobias Penter Cluster L Plymouth University 2022/23
+                </span>
+            </div>
+        </footer>
+    </div>
+<script src="js/logInJava.js"></script>
+</body>
+</html>
